@@ -1,0 +1,66 @@
+:root {
+    /* declare a variable with `--` syntax */
+    --dark: #13293d;
+    --Font: #fff;
+    --navlink-color: #040029;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif, serif, monospace;
+    color: var(--Font);
+}
+
+header {
+    padding: 30px;
+    background: #13293d;
+    color: var(--Font);
+}
+
+h1{
+    font-size: 50px;
+}
+h2{
+    
+}
+
+nav {
+    display: flex;
+    background-color: var(--navlink-color);
+}
+
+nav a {
+    color: var(--Font);
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    background: var(--dark);
+    color: var(--Font);
+}
+
+.pfp{
+    border-radius: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin: 5px;
+    border: 10px;
+    border-color: red;
+}
+
+.Namepfp{
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px){
+    nav {
+        flex-direction: column;
+    }
+}
+
